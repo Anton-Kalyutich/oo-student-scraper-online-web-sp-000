@@ -5,7 +5,7 @@ require 'nokogiri'
 
 class Scraper
 
-  def self.scrape_index_page(index_url)
+  def self.scrape_rotten_tomatoes
     array_of_students = []
     html = open(index_url)
     doc = Nokogiri::HTML(html)
